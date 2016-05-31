@@ -3,6 +3,8 @@
 
 @interface Student : NSObject
 
-+(NSString * ) reverse:(NSString *) str;
++(NSString *) appendToStr:  (NSString *) str
+                  HowMany:  (NSUInteger) howMany
+                     What:  (NSString *) what ;
 
 @end

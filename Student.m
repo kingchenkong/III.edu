@@ -3,30 +3,28 @@
 
 @implementation Student
 
-+( NSString * ) reverse:(NSString *) str
++(NSString *) appendToStr:  (NSString *) str
+                  HowMany:  (NSUInteger) howMany
+                     What:  (NSString *) what
 {
-    NSString *  rv = @"";
-    NSString *  rv_stack = @"";
-    NSString * str_catch;
-    NSRange index ;
-    
-    rv = str;   //str 是初值
-    NSLog(@"Original string: %@",str);
-// fix 練習二 #2 請將 str 字串頭尾顛倒,
-//  再將結果字串當作傳回值回傳
-//  請寫在這裡
-    index = [ str rangeOfString: str];
-    NSUInteger i ;
-    for(i= index.length;i>0;i-=1){
-        str_catch = [str substringWithRange:NSMakeRange(i-1, 1)];
-        //NSLog(@"%@",str_catch);   // print 擷取的段落
-        rv_stack = [rv_stack stringByAppendingString:str_catch];
-        //NSLog(@"%@",rv2);         // print 堆疊
+    NSString * rv = str ;
+//
+// fix 練習二 #2  請在str字串後面
+//  , 重複串接 howMany 次 的 what 字串.
+//  請將串接的結果字串當作傳回值傳回去
+//
+//     請寫在這裡
+    for (int i=1;i<=howMany;i+=1){
+        rv = [rv stringByAppendingString:what];
     }
-    rv =rv_stack;
-    //  已完成的字串
-    return   rv;
+    //NSLog(@"%@",rv);
+    
+    
+    
+    
+    return  rv ;
 }
+
 
 
 @end
