@@ -1,45 +1,38 @@
 //  ViewController.m
-//  m8_homework_string_append
+//  m8_homework_mutable_string
 #import "ViewController.h"
 
-#import "Student.h"
+#import "Answer.h"
 
 @implementation ViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    NSLog(@"開始" );
+    NSLog(@"開始");
+    Answer * bj = [[Answer alloc]init];
     
-    //  宣告區
-    NSString * ans = @"\n";
-    int LEVEL = 5;      //  層數
-    int Blanks = LEVEL - 1;
-    int Leaves = 1;
-//
-// fix 練習一 #1  執行此程式, 看會印出什麼?
+    NSMutableString * mut_str = [[NSMutableString alloc]initWithFormat:@"\n"];
     
-//  HomeWork #3  在 student.m
-    for (int i=1 ; i <= LEVEL ; i += 1 ) {
-        ans = [ Student appendToStr: ans HowMany: Blanks What:@" " ];
-                // ans 加 空白
-        ans = [ Student appendToStr: ans HowMany: Leaves What:@"*" ];
-                // ans 加    葉子
-        ans = [ Student appendToStr: ans HowMany: 1 What:@"\n" ];
-                // ans 加        換行
-        Blanks -= 1;
-        Leaves += 2;
+    int howManyLevels = 5;      //  層數
+    
+    int numberOfBlanks = howManyLevels - 1;
+    int numberOfLeaves = 1;
+    
+    for (int i = 1; i <= howManyLevels; i += 1) {
+        
+        [ bj appendTo:mut_str HowMany:numberOfBlanks What:@" " ];
+        [ bj appendTo:mut_str HowMany:numberOfLeaves What:@"*" ];
+        [ bj appendTo:mut_str HowMany:1 What:@"\n" ];
+        
+        numberOfBlanks -= 1;
+        numberOfLeaves += 2;
     }
+// fix 練習一 #1  執行此程式, 看會印出什麼?
+            //      HomeWork #4 修改段 @ Answer.m
+    NSLog(@"%@", [ mut_str description ] );
     
-    NSLog(@"%@" , ans );
     NSLog(@"Hello, World!");
-    
-    
-    
-    
-    
-    
-    
 }
 
 @end
