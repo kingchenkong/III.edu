@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="zh-tw">
+	<head>
+		<meta charset="UTF-8" />
+		<title>0513_table</title>	
+		<style>
+			/*	CSS selector conde is here,		//這種在這邊不能用喔！！	*/	
+			table {
+				border:3px solid green;
+				width:400px;
+				border-collapse:collapse;
+				margin:0px auto;
+			}
+			td,th {
+				border:1px solid gray;
+			}
+			thead {
+				border-bottom:3px double red;
+				background-color:#000079;
+				color:#FFFFFF;
+			}
+			tbody {
+				background-color:#7AFEC6;
+			}
+			tbody tr:nth-child(2n) {background-color:#CAFFFF;}
+			tbody tr:nth-child(2n+1) {background-color:#DEFFAC;}
+			tbody tr:hover {background-color:#FFFFFF;}
+			
+			#div_padcen {
+				padding-top:40px;
+				padding-bottom:40px;
+				line-height:10px;
+				border:1px solid red;
+				width:100px;
+				height:100px;
+				text-align:center;
+				
+			}
+		</style>
+
+	</head>
+	<body>
+		
+		<table>
+			<caption>表格練習</caption>
+		<thead>		<!--	標題列	-->
+			<tr>
+				<th>a</th>
+				<th>b</th>
+				<th>c</th>
+				<th>d</th>
+			</tr>
+			<tr>  		
+				<th colspan="2">a</th>
+				
+				<th colspan="2">c</th>
+				
+			</tr>
+		</thead>	
+		<tbody>		<!--	儲存格列	-->
+			<tr>		<!--	第	一	列	-->
+				<td>1</td>
+				<td colspan="3">2</td>
+
+
+			</tr>
+				
+			<tr>		<!--	第	二	列	-->
+				<td rowspan="2">1</td>
+				<td>2</td>
+				<td>3</td>
+				<td>4</td>
+			</tr>
+				
+			<tr>		<!--	第	三	列	-->
+				
+				<td>2</td>
+				<td>3</td>
+				<td>4</td>
+			</tr>
+				
+			<tr>		<!--	第	四	列	-->
+				<td>1</td>
+				<td>2</td>
+				<td>3</td>
+				<td>4</td>
+			</tr>
+			
+			<tr>		<!--	第	五	列	-->
+				<td>1</td>
+				<td colspan="3">2</td>
+
+
+			</tr>
+				
+			<tr>		<!--	第	六	列	-->
+				<td rowspan="2">1</td>
+				<td>2</td>
+				<td>3</td>
+				<td>4</td>
+			</tr>
+				
+			<tr>		<!--	第	七	列	-->
+				
+				<td>2</td>
+				<td>3</td>
+				<td>4</td>
+			</tr>
+				
+			<tr>		<!--	第	八	列	-->
+				<td>1</td>
+				<td>2</td>
+				<td>3</td>
+				<td>4</td>
+			</tr>
+		</tbody>			
+		</table>
+	<hr>
+				<!--	div	文字左右 ＋ 上下置中	-->
+		<div style="border:1px solid red;width:100px;height:100px;text-align:center;line-height:100px;">文字練習</div>
+			
+
+	<hr>
+				<!--	padding作法		div	文字左右 ＋ 上下置中	-->
+		<div style="border:1px solid red;width:100px;padding-top:50px;padding-bottom:50px;text-align:center;">文字練習</div>	
+		
+			<script>
+			//	javascript code is here~
+			/*	這種 這邊也可以用喔		*/
+		</script>
+	</body>
+	
+</html>

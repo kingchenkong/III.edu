@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="zh-tw">
+	<head>
+		<meta charset="UTF-8" />
+		<title>HW_02_0518</title>	
+		<style>
+			fieldset {
+				width:500px;
+				border: 1px solid #228B22;
+				border-radius:15px;
+				margin:15px;
+			}
+			.divClass {
+				width:450px;
+				border-bottom:1px solid #e0e0e0;
+				padding-bottom:10px;
+				margin:20px;
+			}
+			.labelClass_1 {
+				font-size:6px;
+				color:#E0E0E0;
+			}
+			.submitButton {
+				width:450px;
+				margin:20px;
+				text-align:center;
+			}
+			
+		</style>
+		<script src="Calendar/Compact/CalendarPopup.js"></script>
+		<script>
+			//		日曆選擇氣函數
+			var cal = new CalendarPopup(); 
+			
+			//		檢查字元
+			window.onload=function(){
+                document.getElementById("idAccount").onblur=ifAccountCorrect;
+                document.getElementById("idPwd").onblur=ifPasswdCorrect;
+			};
+			
+			
+           	function ifAccountCorrect(){			
+           		var theAccount=document.getElementById("idAccount").value;
+			    var theAccountLen=theAccount.length;
+			    var flag_Acc=false;
+			    
+			    	if(theAccount==""){
+			    		document.getElementById("idAccountSpan").innerHTML="<img src='_hwImages/error_1.png' width='16px'><span style='font-size:6px;color:#E0E0E0;'>不可以空白喔！！</span>";		
+					}
+					else if(theAccountLen>=2){
+			    		for(var i=0;i<theAccountLen;i++){
+			    			var theCheckChr=escape(theAccount.substr(i,1));
+			    			if (theCheckChr.substr(2,4)>="4E00" && theCheckChr.substr(2,4)<="9FFF"){
+			    				flag_Acc=true;
+			    				}else{
+			    					flag_Acc=false;
+			    					break;
+			    					}
+			    	}
+			    	}
+					if(flag_Acc){
+           				document.getElementById("idAccountSpan").innerHTML="<img src='_hwImages/complete_1.png' width='16px'><span style='font-size:6px;color:#E0E0E0;'>輸入正確</span>";
+           			}else{
+           					document.getElementById("idAccountSpan").innerHTML="<img src='_hwImages/error_1.png' width='16px'><span style='font-size:6px;color:#E0E0E0;'>輸入錯誤</span>";		
+						}
+			};	
+			function ifPasswdCorrect(){			
+           		
+           		var thePwd=document.getElementById("idPwd").value;
+			    var thePwdLen=thePwd.length;
+			    var flag1,flag2,flag3,flag_Pwd=false;
+			    
+			    if(thePwd==""){
+			    	//檢查空白
+			    	document.getElementById("idPwdSpan").innerHTML="<img src='_hwImages/error_1.png' width='16px'><span style='font-size:6px;color:#E0E0E0;'>不可以空白喔！！</span>";		
+					}
+					else if(thePwdLen>=6){		//檢查長度
+			    		//		  # %23 $ %24 % %25  & %26		! %21 ^ %5E		* 2A escapeXX  @ 40	escapeXX
+			    		for(var i=0;i<thePwdLen;i++){
+			    			var thePwdChar=thePwd.substr(i,1).toUpperCase();
+			    			if(thePwdChar>="A"&&thePwdChar<="Z"){
+			    				flag1=true;		//檢查轉換後的大寫字
+			    			}
+			    			else if(thePwdChar>="0"&&thePwdChar<="9"){
+			    				flag2=true;		//檢查數字
+			    			}
+			    			else if(escape(thePwdChar)>="#"&&escape(thePwdChar)<="&"||thePwdChar=="!"||thePwdChar=="^"||thePwdChar=="*"||thePwdChar=="@"){
+			    				flag3=true;		//檢查特殊符號	  # %23 $ %24 % %25  & %26		! %21 ^ %5E		* 2A escapeXX  @ 40	escapeXX
+			    			}
+			    			if(flag1&&flag2&&flag3){
+			    				flag_Pwd=true;
+			    				break;
+			    			}
+			    		}
+			    	if(flag_Pwd){
+           			document.getElementById("idPwdSpan").innerHTML="<img src='_hwImages/complete_1.png' width='16px'><span style='font-size:6px;color:#E0E0E0;'>輸入正確</span>";
+           			}else{
+           			document.getElementById("idPwdSpan").innerHTML="<img src='_hwImages/error_1.png' width='16px'><span style='font-size:6px;color:#E0E0E0;'>輸入錯誤</span>";		
+					}
+			    }
+			};
+			
+			
+				//		判斷式	
+				
+				
+					
+		</script>
+	</head>
+	<body>
+		<form>
+				<fieldset>
+					<legend>Form check</legend>
+						<div class="divClass">
+							<label>姓名:</label>
+							<input type="text" 		id="idAccount" 	name="nameAccount" placeholder="請輸入姓名" autofocus/>
+							<span id="idAccountSpan"> </span>
+							<br>
+							
+							<label class="labelClass_1">(1.不可空白 2.至少兩個字以上3.必須全部為中文字)</label>
+						</div>
+						<div class="divClass">
+							<label>密碼:</label>
+							<input type="text" 		id="idPwd" 		name="namePwd"	placeholder="請輸入密碼" /> 
+							<span id="idPwdSpan"> </span>
+							<br>
+							<label class="labelClass_1">(1.不可空白2.至少6個字以上且必須全部包含英文字母,數字,特殊符號[!@#$%^&amp;*])</label>
+						</div>
+									<!--		日期選擇器套用		-->
+						<div class="divClass">
+							<label>日期:</label>
+							
+							<input type="text" 		id="date" 		name="nameDate"	placeholder="Ex:2016/05/11" 
+							onclick="cal.select(document.forms[0].date,'date','yyyy/MM/dd'); 
+							return false;"/> 
+							<br>
+							<label class="labelClass_1">日期格式：西元年/月/日 yyyy/MM/dd 請點選日曆來選擇日期</label>
+						</div>
+					<div class="submitButton">
+					<input type="button" value="送出" />
+					<input type="reset" value="清除" />
+				</div>
+				</fieldset>
+			</form>
+			<form action="#" method="post" enctype="multipart/form-data">
+		</form>
+	</body>
+</html>

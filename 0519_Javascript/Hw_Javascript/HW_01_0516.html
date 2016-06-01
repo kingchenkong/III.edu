@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<title>HW_01_0516.html</title>
+		<style>
+			table {
+				border:3px solid;
+				border-color:#B7FF4A;
+				border-collapse:collapse;
+				margin:0px auto }
+			td {
+				
+				border-right:3px solid;
+				border-color:#B7FF4A;
+				color:#FFFAFF;
+			}
+			tbody {
+				background-color:#336666;
+			}
+		</style>	
+		<script>
+		/*
+		var pName1="Audi";
+		var pName2="BMW";
+		
+		document.write("<table>");
+		document.write("<tr><td>PName</td><td>PID</td></tr>");
+		document.write("<tr><td>"+pName2+"</td><td>001</td></tr>");
+		document.write("<tr><td>"+pName2+"</td><td>002</td></tr>");
+		document.write("</table>");
+		*/
+		
+		document.write("<table>");
+		for(var j=1;j<10;j++)
+			{
+				document.write("<tr>");
+			for(var k=2;k<10;k++)
+			{
+				document.write("<td>");
+				var l=j*k;
+					
+				
+					document.write(j+"*"+k+"="+l+"");
+					document.write("</td>");
+				
+			}
+				document.write("</tr>");
+		}
+		document.write("</table>");
+		
+		
+		</script>	
+	</head>
+
+	<body>
+		
+	</body>
+</html>

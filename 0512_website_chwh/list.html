@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="zh-tw">
+	<head>
+		<meta charset="UTF-8" />
+		<title>清單元素</title>	
+	
+		<style>
+		/*	error	
+			#menu_error1 li {
+				list-style-type:none;
+				list-style-image:url('images/apple_icon.png');
+			}
+			#menu_error2 li {
+				list-style-type:none;
+				list-style-image:url('images/inside_icon.png');
+			}
+			#menu_error3 li {
+				list-style-type:none;
+				list-style-image:url('images/wiki_icon.png');
+			}
+			*/
+			
+			#menu li {
+				list-style-type:none;
+				list-style-image:url('images/icon_1.png')
+			}
+			#menu1 li {
+				list-style-type:none;
+				list-style-image:url('images/icon_2.png')
+			}
+			#menu2 li {
+				list-style-type:none;
+				list-style-image:url('images/icon_3.png')
+			}
+			/* 符號位置 */
+			.in {
+				background-color:yellow;
+				list-style-position:inside;
+			}
+			.out {
+				background-color:yellow;
+				list-style-position:outside;
+			}
+			
+		</style>
+	</head>
+	<body>
+		<a href="first.html">first apple page!!</a>
+		<!--	ul	-->
+		<ul id="menu">
+			<li>唐詩</li>
+			<li>宋詞
+				<ul id="menu1">
+					<li>李清照
+						<ol id="menu2">
+							<li class="in">菩薩蠻</li>
+							<li>一翦梅</li>
+							<li class="out">如夢令</li>
+						</ol>
+					</li>
+					<li>歐陽修</li>
+				</ul>
+				</li>
+			<li>元曲</li>
+		</ul>
+		<!--	ol	-->
+		<hr>
+		<ol>
+			<li>就業養成班</li>
+			<li>App design SOHO</li>
+		</ol>
+		<!--	dl	-->
+		<hr>
+		<h3 style="background-color:yellow;">台灣黑熊</h3>
+		<dl>
+			<dt>俗名：</dt>
+				<dd>狗熊</dd>
+				<dd>白喉熊</dd>
+			<dt>分類</dt>
+				<dd><h3>食肉目</h3><h4>熊科</h4></dd>
+			<dt>分佈：</dt>
+				<dd>台灣本島，海拔一千 至 三千五百公尺之森林地帶均有分佈</dd>
+			
+		</dl>
+		
+		
+		
+	</body>
+</html>

@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="zh-tw">
+    <head>             
+    <meta charset="utf-8" />
+	<title>HW_05_0522.html</title>
+    <script type="text/javascript">
+    		//var y,M,d;
+    		
+    		var yearAlreadyChange,monthAleadyChange=false;
+        window.onload=function(){
+        	
+        															//		新		增		年
+            for (var y = 2010; y <= 2016; y++) {   
+                var optYear = window.document.createElement("option");		// create a Element : type is "option"
+                
+                optYear.setAttribute("value",y);							// set a Attribute : type is "value"
+                var optYearName=document.createTextNode(y);					// create i textnodes 
+                optYear.appendChild(optYearName);							// Let textnode under optYear
+                
+                document.getElementById('idSelYear').appendChild(optYear);	// Let optYear under the <select id="idselYear">
+            };
+          
+            														//		新		增		月
+            for (var M = 1; M <= 12; M++) {   
+                var optMonth = window.document.createElement("option");
+                
+                optMonth.setAttribute("value",M);		
+                var optMonthName=document.createTextNode(M);
+                optMonth.appendChild(optMonthName);
+                
+                document.getElementById('idSelMonth').appendChild(optMonth);
+            };
+            					//		selector value change
+        	document.getElementById("idSelYear").onchange=
+        	function(){
+        		chosenYear=document.getElementById('idSelYear').value;
+        		document.getElementById('idSpan1').innerHTML=chosenYear;
+        		yearAlreadyChange=true;
+        	};						
+            document.getElementById("idSelMonth").onchange=
+            function(){
+            	chosenMonth=document.getElementById('idSelMonth').value;
+            	document.getElementById('idSpan2').innerHTML=chosenMonth;
+            	monthAleadyChange=true;
+            	
+            	if(monthAleadyChange&&yearAlreadyChange){
+            	var howManyDays=new Date(chosenYear,chosenMonth,0);	// 抓 該月 天數
+             	//alert(howManyDays);
+            	var theDay=howManyDays.getDate();
+            	//alert(theDay);
+            															//		新		增		日
+            	for (var d = 1; d <= theDay; d++) {   
+                var optDay = window.document.createElement("option");
+                
+                optDay.setAttribute("value",d);
+                optDay.setAttribute("id","idoptDay");		
+                var optDayName=document.createTextNode(d);
+                optDay.appendChild(optDayName);
+                
+                document.getElementById('idSelDay').appendChild(optDay);
+            	};
+            };	
+            document.getElementById("idSelDay").onchange=
+            function(){
+            	chosenDay=document.getElementById('idSelDay').value;
+            	document.getElementById('idSpan3').innerHTML=chosenDay;
+            	
+            	var howManyDays=new Date(chosenYear,chosenMonth,0);	// 抓 該月 天數
+             	//alert(howManyDays);
+            	var theDay=howManyDays.getDate();
+            	
+            	for (var d = 1; d <= theDay; d++) { 
+            	var theDayNode=document.getElementById("idoptDay");		//remove idSelDay node
+				theDayNode.parentNode.removeChild(theDayNode);
+            	};
+            };
+            };
+        };
+            	
+        	
+        								
+            
+	</script>
+	</head>
+	
+	<body>
+		<select id="idSelYear"> </select>
+		<select id="idSelMonth"> </select>
+		<select id="idSelDay"> </select>
+		<br />
+			<span id="idSpan">您選擇的日期是
+				<span id="idSpan1"> </span>年
+					<span id="idSpan2"> </span>月
+						<span id="idSpan3"> </span>日	</span>
+		
+	</body>
+</html>
+

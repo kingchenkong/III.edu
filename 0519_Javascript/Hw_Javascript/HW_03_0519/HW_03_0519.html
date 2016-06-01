@@ -1,0 +1,82 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <title>Hw_03_0519.html</title>
+        <script>
+           	window.onload = function () {
+           	var imgArray=document.getElementsByTagName("img");
+           		//alert(imgs.length);
+           		
+           		var idImgIndex=imgArray[0].id.substr(5);
+           		//alert(idImgIndex);
+           		
+           		//alert(typeof(parseInt(idImgIndex)));
+           		var b =parseInt(idImgIndex)+1;
+           		//alert(b);
+           		
+           		   
+           		
+           		
+       				for(var i=0;i<imgArray.length;i++){
+       				imgArray[i].onmouseover=function(){mouseOver(this.id);};
+       				imgArray[i].onmouseout=function(){mouseOut(this.id);};
+       				imgArray[i].onclick=function(){Click(this.id);};
+       				
+       			}
+            }; 
+
+			var canMove=true;
+			
+        	function mouseOver(idImg) {
+            
+            if(canMove){
+            var idImgIndex=parseInt(idImg.substr(5));
+            for(var i=0;i<idImgIndex;i++){
+           	document.images[i].src = "images/chngstar.gif";
+           	document.getElementById("idSpan1").innerHTML="<p>打分中現在有..."+(i+1)+"顆星！！</p>";
+           	}
+           	}
+            };
+
+        	function mouseOut(idImg) {
+            
+            if(canMove){
+            var idImgIndex=parseInt(idImg.substr(5));
+            for(var i=0;i<idImgIndex;i++){
+           	document.images[i].src = "images/star.gif";
+           	document.getElementById("idSpan1").innerHTML="<p></p>";
+           	}
+            }
+            
+            };
+            
+            function Click(idImg) {
+            
+            if(canMove){	
+            var idImgIndex=parseInt(idImg.substr(5));
+            for(var i=0;i<idImgIndex;i++){
+           	document.images[i].src = "images/chngstar.gif";
+           	document.getElementById("idSpan1").innerHTML="<p>你給了"+(i+1)+"顆星！！</p>";
+           	}	
+           	canMove=false;
+            }	
+            };
+            
+    </script>
+</head>
+<body>
+			
+    <img id="idImg1" name="nameImg" src="Images/star.gif" />
+    
+    <img id="idImg2" name="nameImg" src="Images/star.gif" />
+   	
+    <img id="idImg3" name="nameImg" src="Images/star.gif" />
+    
+    <img id="idImg4" name="nameImg" src="Images/star.gif" />
+    
+    <img id="idImg5" name="nameImg" src="Images/star.gif" />
+    <br>
+    <span id="idSpan1"> </span>
+</body>
+</html>
