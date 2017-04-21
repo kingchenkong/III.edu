@@ -1,0 +1,51 @@
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "01H-Ck-ITA"; */
+"01H-Ck-ITA.normalTitle" = "Button";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "897-25-NWx"; */
+"897-25-NWx.text" = "Label";
+
+/* Class = "UINavigationItem"; title = "Note List"; ObjectID = "CGT-zz-hkD"; */
+"CGT-zz-hkD.title" = "Note List";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "EfI-V4-GTT"; */
+"EfI-V4-GTT.text" = "Label";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "GcA-wg-z95"; */
+"GcA-wg-z95.text" = "Label";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "JG9-RD-7PN"; */
+"JG9-RD-7PN.normalTitle" = "Button";
+
+/* Class = "UILabel"; text = "Title"; ObjectID = "LjD-nO-Ptz"; */
+"LjD-nO-Ptz.text" = "Title";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "MAI-rp-awF"; */
+"MAI-rp-awF.normalTitle" = "Button";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "R98-IW-S1q"; */
+"R98-IW-S1q.normalTitle" = "Button";
+
+/* Class = "UIBarButtonItem"; title = "upload"; ObjectID = "ayc-9V-YG5"; */
+"ayc-9V-YG5.title" = "upload";
+
+/* Class = "UILabel"; text = "設定 1"; ObjectID = "cjk-bs-I1Y"; */
+"cjk-bs-I1Y.text" = "設定 1";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "eCj-ou-RvY"; */
+"eCj-ou-RvY.text" = "Label";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "eNd-2b-S3W"; */
+"eNd-2b-S3W.text" = "Label";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "gWk-1d-WWM"; */
+"gWk-1d-WWM.text" = "Label";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "owf-WG-reL"; */
+"owf-WG-reL.text" = "Label";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "va8-Jr-FIH"; */
+"va8-Jr-FIH.normalTitle" = "Button";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "yLR-VY-h5T"; */
+"yLR-VY-h5T.normalTitle" = "Button";

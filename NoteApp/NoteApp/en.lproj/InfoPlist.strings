@@ -1,0 +1,8 @@
+/* 
+  InfoPlist.strings
+  NoteApp
+
+  Created by 陳維漢 on 2016/7/4.
+  Copyright © 2016年 陳維漢. All rights reserved.
+*/
+"CFBundleDisplayName" = "Note App";

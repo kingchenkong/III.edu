@@ -1,0 +1,582 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0264EA70B36C9CE77C116404 /* Pods_NoteApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8BB2D66FDBEE875798F3A4A6 /* Pods_NoteApp.framework */; };
+		8726AD251D29EED400AA28A5 /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = 8726AD241D29EED400AA28A5 /* Reachability.m */; };
+		876B414B1D1232F2001752F2 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 876B414A1D1232F2001752F2 /* main.m */; };
+		876B414E1D1232F2001752F2 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 876B414D1D1232F2001752F2 /* AppDelegate.m */; };
+		876B41541D1232F2001752F2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 876B41521D1232F2001752F2 /* Main.storyboard */; };
+		876B41561D1232F2001752F2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 876B41551D1232F2001752F2 /* Assets.xcassets */; };
+		876B41591D1232F2001752F2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 876B41571D1232F2001752F2 /* LaunchScreen.storyboard */; };
+		876B41621D123490001752F2 /* NoteListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 876B41611D123490001752F2 /* NoteListViewController.m */; };
+		876B41651D123D78001752F2 /* Note.m in Sources */ = {isa = PBXBuildFile; fileRef = 876B41641D123D78001752F2 /* Note.m */; };
+		877210591D2A4ABE00B03204 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 8772105B1D2A4ABE00B03204 /* InfoPlist.strings */; };
+		8772105F1D2A4CDE00B03204 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 877210611D2A4CDE00B03204 /* Localizable.strings */; };
+		877BB4A11D12958F00AEF844 /* NoteViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 877BB4A01D12958F00AEF844 /* NoteViewController.m */; };
+		877BB4A41D13E56A00AEF844 /* ViewController3.m in Sources */ = {isa = PBXBuildFile; fileRef = 877BB4A31D13E56A00AEF844 /* ViewController3.m */; };
+		877BB4A71D13EA3C00AEF844 /* second.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 877BB4A51D13EA3C00AEF844 /* second.storyboard */; };
+		877BB4AA1D178C1500AEF844 /* NoteDataModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 877BB4A81D178C1500AEF844 /* NoteDataModel.xcdatamodeld */; };
+		877BB4AD1D17918900AEF844 /* CoreDataHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 877BB4AC1D17918900AEF844 /* CoreDataHelper.m */; };
+		8784698D1D1284CF00DCEDC5 /* NoteCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 8784698C1D1284CF00DCEDC5 /* NoteCell.m */; };
+		87DDD3F91D2B475900D5F549 /* Fabric.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 87DDD3F71D2B475900D5F549 /* Fabric.framework */; };
+		87DDD3FA1D2B475A00D5F549 /* Crashlytics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 87DDD3F81D2B475900D5F549 /* Crashlytics.framework */; };
+		87DDD3FC1D2B8EDB00D5F549 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 87DDD3FB1D2B8EDB00D5F549 /* GoogleService-Info.plist */; };
+		87DDD4001D2B958100D5F549 /* AdSupport.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 87DDD3FF1D2B958100D5F549 /* AdSupport.framework */; };
+		87DDD4021D2B958D00D5F549 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 87DDD4011D2B958D00D5F549 /* AudioToolbox.framework */; };
+		87DDD4041D2B959700D5F549 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 87DDD4031D2B959700D5F549 /* AVFoundation.framework */; };
+		87DDD4061D2B95A100D5F549 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 87DDD4051D2B95A100D5F549 /* CoreGraphics.framework */; };
+		87DDD4081D2B95AA00D5F549 /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 87DDD4071D2B95AA00D5F549 /* CoreMedia.framework */; };
+		87DDD40A1D2B95B300D5F549 /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 87DDD4091D2B95B300D5F549 /* CoreTelephony.framework */; };
+		87DDD40D1D2B95BF00D5F549 /* EventKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 87DDD40B1D2B95BF00D5F549 /* EventKit.framework */; };
+		87DDD40E1D2B95BF00D5F549 /* EventKitUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 87DDD40C1D2B95BF00D5F549 /* EventKitUI.framework */; };
+		87DDD4101D2B95CA00D5F549 /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 87DDD40F1D2B95CA00D5F549 /* MessageUI.framework */; };
+		87DDD4121D2B95D300D5F549 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 87DDD4111D2B95D300D5F549 /* StoreKit.framework */; };
+		87DDD4141D2B95E400D5F549 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 87DDD4131D2B95E400D5F549 /* SystemConfiguration.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		25FA25B91966A1D22C465A36 /* Pods-NoteApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NoteApp.debug.xcconfig"; path = "Pods/Target Support Files/Pods-NoteApp/Pods-NoteApp.debug.xcconfig"; sourceTree = "<group>"; };
+		2CDD2870982BEC26797FE9C1 /* Pods-NoteApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NoteApp.release.xcconfig"; path = "Pods/Target Support Files/Pods-NoteApp/Pods-NoteApp.release.xcconfig"; sourceTree = "<group>"; };
+		870105481D1A243400C1E854 /* NoteDataModel 2.0.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = "NoteDataModel 2.0.xcdatamodel"; sourceTree = "<group>"; };
+		8726AD231D29EED400AA28A5 /* Reachability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Reachability.h; sourceTree = "<group>"; };
+		8726AD241D29EED400AA28A5 /* Reachability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Reachability.m; sourceTree = "<group>"; };
+		876B41461D1232F2001752F2 /* NoteApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NoteApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		876B414A1D1232F2001752F2 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		876B414C1D1232F2001752F2 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		876B414D1D1232F2001752F2 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		876B41531D1232F2001752F2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		876B41551D1232F2001752F2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		876B41581D1232F2001752F2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		876B415A1D1232F2001752F2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		876B41601D123490001752F2 /* NoteListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NoteListViewController.h; sourceTree = "<group>"; };
+		876B41611D123490001752F2 /* NoteListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NoteListViewController.m; sourceTree = "<group>"; };
+		876B41631D123D78001752F2 /* Note.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Note.h; sourceTree = "<group>"; };
+		876B41641D123D78001752F2 /* Note.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Note.m; sourceTree = "<group>"; };
+		877210541D2A486900B03204 /* zh-Hant */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hant"; path = "zh-Hant.lproj/Main.strings"; sourceTree = "<group>"; };
+		877210551D2A486900B03204 /* zh-Hant */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hant"; path = "zh-Hant.lproj/second.strings"; sourceTree = "<group>"; };
+		877210561D2A486900B03204 /* zh-Hant */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hant"; path = "zh-Hant.lproj/LaunchScreen.strings"; sourceTree = "<group>"; };
+		8772105A1D2A4ABE00B03204 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		8772105C1D2A4AF000B03204 /* zh-Hant */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hant"; path = "zh-Hant.lproj/InfoPlist.strings"; sourceTree = "<group>"; };
+		877210601D2A4CDE00B03204 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		877210631D2A4CF500B03204 /* zh-Hant */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hant"; path = "zh-Hant.lproj/Localizable.strings"; sourceTree = "<group>"; };
+		877BB49F1D12958F00AEF844 /* NoteViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NoteViewController.h; sourceTree = "<group>"; };
+		877BB4A01D12958F00AEF844 /* NoteViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NoteViewController.m; sourceTree = "<group>"; };
+		877BB4A21D13E56A00AEF844 /* ViewController3.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController3.h; sourceTree = "<group>"; };
+		877BB4A31D13E56A00AEF844 /* ViewController3.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController3.m; sourceTree = "<group>"; };
+		877BB4A61D13EA3C00AEF844 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/second.storyboard; sourceTree = "<group>"; };
+		877BB4A91D178C1500AEF844 /* NoteDataModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = NoteDataModel.xcdatamodel; sourceTree = "<group>"; };
+		877BB4AB1D17918900AEF844 /* CoreDataHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CoreDataHelper.h; sourceTree = "<group>"; };
+		877BB4AC1D17918900AEF844 /* CoreDataHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CoreDataHelper.m; sourceTree = "<group>"; };
+		8784698B1D1284CF00DCEDC5 /* NoteCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NoteCell.h; sourceTree = "<group>"; };
+		8784698C1D1284CF00DCEDC5 /* NoteCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NoteCell.m; sourceTree = "<group>"; };
+		87DDD3F71D2B475900D5F549 /* Fabric.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Fabric.framework; sourceTree = "<group>"; };
+		87DDD3F81D2B475900D5F549 /* Crashlytics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Crashlytics.framework; sourceTree = "<group>"; };
+		87DDD3FB1D2B8EDB00D5F549 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		87DDD3FF1D2B958100D5F549 /* AdSupport.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AdSupport.framework; path = System/Library/Frameworks/AdSupport.framework; sourceTree = SDKROOT; };
+		87DDD4011D2B958D00D5F549 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		87DDD4031D2B959700D5F549 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		87DDD4051D2B95A100D5F549 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		87DDD4071D2B95AA00D5F549 /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = System/Library/Frameworks/CoreMedia.framework; sourceTree = SDKROOT; };
+		87DDD4091D2B95B300D5F549 /* CoreTelephony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreTelephony.framework; path = System/Library/Frameworks/CoreTelephony.framework; sourceTree = SDKROOT; };
+		87DDD40B1D2B95BF00D5F549 /* EventKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = EventKit.framework; path = System/Library/Frameworks/EventKit.framework; sourceTree = SDKROOT; };
+		87DDD40C1D2B95BF00D5F549 /* EventKitUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = EventKitUI.framework; path = System/Library/Frameworks/EventKitUI.framework; sourceTree = SDKROOT; };
+		87DDD40F1D2B95CA00D5F549 /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = System/Library/Frameworks/MessageUI.framework; sourceTree = SDKROOT; };
+		87DDD4111D2B95D300D5F549 /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
+		87DDD4131D2B95E400D5F549 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		8BB2D66FDBEE875798F3A4A6 /* Pods_NoteApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NoteApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		876B41431D1232F2001752F2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				87DDD4141D2B95E400D5F549 /* SystemConfiguration.framework in Frameworks */,
+				87DDD4121D2B95D300D5F549 /* StoreKit.framework in Frameworks */,
+				87DDD4101D2B95CA00D5F549 /* MessageUI.framework in Frameworks */,
+				87DDD40D1D2B95BF00D5F549 /* EventKit.framework in Frameworks */,
+				87DDD40E1D2B95BF00D5F549 /* EventKitUI.framework in Frameworks */,
+				87DDD40A1D2B95B300D5F549 /* CoreTelephony.framework in Frameworks */,
+				87DDD4081D2B95AA00D5F549 /* CoreMedia.framework in Frameworks */,
+				87DDD4061D2B95A100D5F549 /* CoreGraphics.framework in Frameworks */,
+				87DDD4041D2B959700D5F549 /* AVFoundation.framework in Frameworks */,
+				87DDD4021D2B958D00D5F549 /* AudioToolbox.framework in Frameworks */,
+				87DDD4001D2B958100D5F549 /* AdSupport.framework in Frameworks */,
+				87DDD3FA1D2B475A00D5F549 /* Crashlytics.framework in Frameworks */,
+				87DDD3F91D2B475900D5F549 /* Fabric.framework in Frameworks */,
+				0264EA70B36C9CE77C116404 /* Pods_NoteApp.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		83744D8B1A5C65024C37A8E0 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8BB2D66FDBEE875798F3A4A6 /* Pods_NoteApp.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		876B413D1D1232F2001752F2 = {
+			isa = PBXGroup;
+			children = (
+				87DDD4131D2B95E400D5F549 /* SystemConfiguration.framework */,
+				87DDD4111D2B95D300D5F549 /* StoreKit.framework */,
+				87DDD40F1D2B95CA00D5F549 /* MessageUI.framework */,
+				87DDD40B1D2B95BF00D5F549 /* EventKit.framework */,
+				87DDD40C1D2B95BF00D5F549 /* EventKitUI.framework */,
+				87DDD4091D2B95B300D5F549 /* CoreTelephony.framework */,
+				87DDD4071D2B95AA00D5F549 /* CoreMedia.framework */,
+				87DDD4051D2B95A100D5F549 /* CoreGraphics.framework */,
+				87DDD4031D2B959700D5F549 /* AVFoundation.framework */,
+				87DDD4011D2B958D00D5F549 /* AudioToolbox.framework */,
+				87DDD3FF1D2B958100D5F549 /* AdSupport.framework */,
+				87DDD3F71D2B475900D5F549 /* Fabric.framework */,
+				87DDD3F81D2B475900D5F549 /* Crashlytics.framework */,
+				876B41481D1232F2001752F2 /* NoteApp */,
+				876B41471D1232F2001752F2 /* Products */,
+				9C1596EFDDAB016366E8A723 /* Pods */,
+				83744D8B1A5C65024C37A8E0 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		876B41471D1232F2001752F2 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				876B41461D1232F2001752F2 /* NoteApp.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		876B41481D1232F2001752F2 /* NoteApp */ = {
+			isa = PBXGroup;
+			children = (
+				876B41491D1232F2001752F2 /* Supporting Files */,
+				876B414C1D1232F2001752F2 /* AppDelegate.h */,
+				876B414D1D1232F2001752F2 /* AppDelegate.m */,
+				8726AD231D29EED400AA28A5 /* Reachability.h */,
+				8726AD241D29EED400AA28A5 /* Reachability.m */,
+				876B41631D123D78001752F2 /* Note.h */,
+				876B41641D123D78001752F2 /* Note.m */,
+				876B41601D123490001752F2 /* NoteListViewController.h */,
+				876B41611D123490001752F2 /* NoteListViewController.m */,
+				8784698B1D1284CF00DCEDC5 /* NoteCell.h */,
+				8784698C1D1284CF00DCEDC5 /* NoteCell.m */,
+				876B41521D1232F2001752F2 /* Main.storyboard */,
+				877BB4A51D13EA3C00AEF844 /* second.storyboard */,
+				877BB4A21D13E56A00AEF844 /* ViewController3.h */,
+				877BB4A31D13E56A00AEF844 /* ViewController3.m */,
+				877BB49F1D12958F00AEF844 /* NoteViewController.h */,
+				877BB4A01D12958F00AEF844 /* NoteViewController.m */,
+				876B41571D1232F2001752F2 /* LaunchScreen.storyboard */,
+				877BB4AB1D17918900AEF844 /* CoreDataHelper.h */,
+				877BB4AC1D17918900AEF844 /* CoreDataHelper.m */,
+				877BB4A81D178C1500AEF844 /* NoteDataModel.xcdatamodeld */,
+				876B41551D1232F2001752F2 /* Assets.xcassets */,
+			);
+			path = NoteApp;
+			sourceTree = "<group>";
+		};
+		876B41491D1232F2001752F2 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				876B414A1D1232F2001752F2 /* main.m */,
+				876B415A1D1232F2001752F2 /* Info.plist */,
+				8772105B1D2A4ABE00B03204 /* InfoPlist.strings */,
+				877210611D2A4CDE00B03204 /* Localizable.strings */,
+				87DDD3FB1D2B8EDB00D5F549 /* GoogleService-Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		9C1596EFDDAB016366E8A723 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				25FA25B91966A1D22C465A36 /* Pods-NoteApp.debug.xcconfig */,
+				2CDD2870982BEC26797FE9C1 /* Pods-NoteApp.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		876B41451D1232F2001752F2 /* NoteApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 876B415D1D1232F2001752F2 /* Build configuration list for PBXNativeTarget "NoteApp" */;
+			buildPhases = (
+				60324AC213087F055D681D0E /* [CP] Check Pods Manifest.lock */,
+				876B41421D1232F2001752F2 /* Sources */,
+				876B41431D1232F2001752F2 /* Frameworks */,
+				876B41441D1232F2001752F2 /* Resources */,
+				87DDD3F61D2B46EB00D5F549 /* ShellScript */,
+				633FA3D061A27154CE9227AC /* [CP] Embed Pods Frameworks */,
+				93A65280290C29556EF3054C /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = NoteApp;
+			productName = NoteApp;
+			productReference = 876B41461D1232F2001752F2 /* NoteApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		876B413E1D1232F2001752F2 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = "陳維漢";
+				TargetAttributes = {
+					876B41451D1232F2001752F2 = {
+						CreatedOnToolsVersion = 7.3.1;
+						DevelopmentTeam = XKSUF3VMJL;
+					};
+				};
+			};
+			buildConfigurationList = 876B41411D1232F2001752F2 /* Build configuration list for PBXProject "NoteApp" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+				"zh-Hant",
+			);
+			mainGroup = 876B413D1D1232F2001752F2;
+			productRefGroup = 876B41471D1232F2001752F2 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				876B41451D1232F2001752F2 /* NoteApp */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		876B41441D1232F2001752F2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				877BB4A71D13EA3C00AEF844 /* second.storyboard in Resources */,
+				8772105F1D2A4CDE00B03204 /* Localizable.strings in Resources */,
+				876B41591D1232F2001752F2 /* LaunchScreen.storyboard in Resources */,
+				876B41561D1232F2001752F2 /* Assets.xcassets in Resources */,
+				876B41541D1232F2001752F2 /* Main.storyboard in Resources */,
+				877210591D2A4ABE00B03204 /* InfoPlist.strings in Resources */,
+				87DDD3FC1D2B8EDB00D5F549 /* GoogleService-Info.plist in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		60324AC213087F055D681D0E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		633FA3D061A27154CE9227AC /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-NoteApp/Pods-NoteApp-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		87DDD3F61D2B46EB00D5F549 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "./Fabric.framework/run 64147524799c5f0d1b0d402bc687c75997a8783e af6e98860b4b044fca12ec09061d772ab4a76c7c8f7933aadf7982e90bb46726";
+		};
+		93A65280290C29556EF3054C /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-NoteApp/Pods-NoteApp-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		876B41421D1232F2001752F2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8784698D1D1284CF00DCEDC5 /* NoteCell.m in Sources */,
+				876B41621D123490001752F2 /* NoteListViewController.m in Sources */,
+				876B414E1D1232F2001752F2 /* AppDelegate.m in Sources */,
+				877BB4AD1D17918900AEF844 /* CoreDataHelper.m in Sources */,
+				8726AD251D29EED400AA28A5 /* Reachability.m in Sources */,
+				877BB4AA1D178C1500AEF844 /* NoteDataModel.xcdatamodeld in Sources */,
+				876B414B1D1232F2001752F2 /* main.m in Sources */,
+				877BB4A11D12958F00AEF844 /* NoteViewController.m in Sources */,
+				876B41651D123D78001752F2 /* Note.m in Sources */,
+				877BB4A41D13E56A00AEF844 /* ViewController3.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		876B41521D1232F2001752F2 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				876B41531D1232F2001752F2 /* Base */,
+				877210541D2A486900B03204 /* zh-Hant */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		876B41571D1232F2001752F2 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				876B41581D1232F2001752F2 /* Base */,
+				877210561D2A486900B03204 /* zh-Hant */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		8772105B1D2A4ABE00B03204 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8772105A1D2A4ABE00B03204 /* en */,
+				8772105C1D2A4AF000B03204 /* zh-Hant */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		877210611D2A4CDE00B03204 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				877210601D2A4CDE00B03204 /* en */,
+				877210631D2A4CF500B03204 /* zh-Hant */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+		877BB4A51D13EA3C00AEF844 /* second.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				877BB4A61D13EA3C00AEF844 /* Base */,
+				877210551D2A486900B03204 /* zh-Hant */,
+			);
+			name = second.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		876B415B1D1232F2001752F2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		876B415C1D1232F2001752F2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		876B415E1D1232F2001752F2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 25FA25B91966A1D22C465A36 /* Pods-NoteApp.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				INFOPLIST_FILE = NoteApp/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-ObjC",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = iii.edu.NoteApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		876B415F1D1232F2001752F2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2CDD2870982BEC26797FE9C1 /* Pods-NoteApp.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				INFOPLIST_FILE = NoteApp/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-ObjC",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = iii.edu.NoteApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		876B41411D1232F2001752F2 /* Build configuration list for PBXProject "NoteApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				876B415B1D1232F2001752F2 /* Debug */,
+				876B415C1D1232F2001752F2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		876B415D1D1232F2001752F2 /* Build configuration list for PBXNativeTarget "NoteApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				876B415E1D1232F2001752F2 /* Debug */,
+				876B415F1D1232F2001752F2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		877BB4A81D178C1500AEF844 /* NoteDataModel.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				870105481D1A243400C1E854 /* NoteDataModel 2.0.xcdatamodel */,
+				877BB4A91D178C1500AEF844 /* NoteDataModel.xcdatamodel */,
+			);
+			currentVersion = 870105481D1A243400C1E854 /* NoteDataModel 2.0.xcdatamodel */;
+			path = NoteDataModel.xcdatamodeld;
+			sourceTree = "<group>";
+			usesTabs = 0;
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 876B413E1D1232F2001752F2 /* Project object */;
+}
