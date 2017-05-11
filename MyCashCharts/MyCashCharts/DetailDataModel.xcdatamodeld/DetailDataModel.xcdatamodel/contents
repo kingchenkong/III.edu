@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="10174" systemVersion="15G31" minimumToolsVersion="Xcode 7.0">
+    <entity name="DetailData" representedClassName="DetailData" syncable="YES">
+        <attribute name="categoryArrayIndex" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <attribute name="categoryColor" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="categoryImageFileName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="categoryName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="cost" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <attribute name="dataName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="detailCategoryImageFileName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="detailCategoryName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="isExpandItem" optional="YES" attributeType="Boolean" syncable="YES"/>
+        <attribute name="location" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="manageProject" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="strDate" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="updateTime" optional="YES" attributeType="Date" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="DetailData" positionX="-63" positionY="-18" width="128" height="240"/>
+    </elements>
+</model>
